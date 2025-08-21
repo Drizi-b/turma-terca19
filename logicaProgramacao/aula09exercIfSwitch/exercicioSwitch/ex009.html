@@ -1,0 +1,27 @@
+<script>
+    let categoriaProduto = prompt("Digite um produto").toLowerCase().trim();
+
+    switch (categoriaProduto) {
+        case "maçã":
+        case "banana":
+        case "laranja":
+            mensagem = "Fruta";
+            break;
+    
+        case "cenoura":
+        case "batata":
+        case "abobrinha":
+            mensagem = "Legumes";
+            break;
+    
+        case "carne":
+        case "peixe":
+        case "frango":
+            mensagem = "Proteína";
+            break;
+    
+        default:
+            mensagem = "Categoria desconhecida";
+    }
+    document.write(mensagem);
+</script>

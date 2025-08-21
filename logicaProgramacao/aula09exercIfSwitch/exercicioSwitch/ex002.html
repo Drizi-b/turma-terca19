@@ -1,0 +1,19 @@
+<script>
+    let parOuImpar = Number(prompt("Digite um número de 1 a 5"));
+    let mensagem;
+    if (parOuImpar >= 1 && parOuImpar <= 5)
+    switch (parOuImpar % 2) {
+       
+        case 0:
+            mensagem = "Par";
+            break;
+    
+        case 1:
+            mensagem = "Impar";
+            break;
+    } else {
+        mensagem = "Número inválido! Favor digite um número de 1 a 5!"
+    }
+
+document.write(mensagem);
+</script>

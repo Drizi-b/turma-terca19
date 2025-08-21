@@ -1,0 +1,22 @@
+<script>
+    let turno = prompt("Digite seu turno (M, T ou N)").toUpperCase().trim();
+
+    switch (turno) {
+        case "M":
+            mensagem = "Bom dia!"
+            break;
+    
+        case "T":
+            mensagem = "Boa tarde!"
+            break;
+    
+        case "N":
+            mensagem = "Boa noite!"
+            break;
+    
+        default:
+            mensagem = "Turno inválido"
+    }
+
+    document.write(mensagem);
+</script>

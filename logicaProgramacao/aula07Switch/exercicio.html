@@ -1,0 +1,23 @@
+<script>
+    const comando = prompt("Digite um comando")
+    // Caso comando for "Iniciar" => documento.write("O sistema iniciou")
+    // Caso comando for "Parar" => documento.write("O sistema parou")
+    // Caso comando for "Reiniciar" => documento.write("O sistema reiniciou")
+    // Caso comando for qlq coisa => documento.write("O sistema está reiniciando")
+    switch (comando) {
+        case "iniciar":
+            document.write("O sistema iniciou");
+            break;
+
+        case "parar":
+            document.write("O sistema parou");
+            break;
+
+        case "reiniciar":
+            document.write("O sistema reiniciou");
+            break;
+
+        default:
+            document.write("O sistema está reiniciando");
+    }
+</script>

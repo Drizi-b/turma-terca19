@@ -1,0 +1,11 @@
+let n1 = 30;
+let n2 = 20;
+
+let verificador = n1 > n2 && n1 == 30;
+console.log(verificador);
+
+let verificador1 = n1 < n2 || n1 == 30;
+console.log(verificador1);
+
+let verificador2 = !(n1 == 30);
+console.log(verificador2);

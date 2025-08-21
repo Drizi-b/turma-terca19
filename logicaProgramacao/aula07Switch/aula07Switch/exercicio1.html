@@ -1,0 +1,34 @@
+<script>
+    const mes = prompt("Digite o mês");
+    let estacao;
+
+    switch (mes) {
+        case "Dezembro":
+        case "Janeiro":
+        case "Fevereiro":
+            estacao = "Verão";
+            break;
+        
+        case "Março":
+        case "Abril":
+        case "Maio":
+            estacao = "Outono";
+            break;
+
+        case "Junho":
+        case "Julho":
+        case "Agosto":
+            estacao = "Inverno";
+            break;
+
+        case "Setembro":
+        case "Outubro":
+        case "Novembro":
+            estacao = "Primavera";
+            break;
+
+        defaul:
+            estacao = "Estação inválida"
+    }
+        document.write(estacao);
+</script>

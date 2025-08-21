@@ -1,0 +1,21 @@
+<script>
+   let bebida = prompt("Escolha uma bebida entre agua, refrigerante e suco: ").toLowerCase().trim();
+
+   switch (bebida) {
+    case "agua":
+        mensagem = "Você escolheu água."
+        break;
+    case "refrigerante":
+        mensagem = "Você escolheu refrigerante."
+        break;
+    case "suco":
+        mensagem = "Você escolheu suco."
+        break;
+   
+    default:
+        mensagem = "Opção inválida."
+        
+   }
+
+   document.write(mensagem);
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let tipoAnimal = prompt("Digite o nome de um aminal").toLowerCase().trim();
+
+    switch (tipoAnimal) {
+        case "cahorro":
+        case "gato":
+            mensagem = "Mamífero";       
+            break;
+    
+        case "papagaio":
+        case "canário":
+            mensagem = "Ave";       
+            break;
+    
+        case "cobra":
+        case "jacaré":
+            mensagem = "Réptil";       
+            break;
+    
+        default:
+            mensagem = "Animal desconhecido."
+    }
+    document.write(mensagem);
+</script>

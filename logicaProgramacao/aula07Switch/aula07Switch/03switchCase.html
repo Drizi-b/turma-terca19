@@ -1,0 +1,32 @@
+<script>
+    const diaDaSemana = new Date().getDay();
+    let mensasgem;
+
+    switch(diaDaSemana){
+        case 0:
+            mensagem = "Hj é dom";
+            break;
+        case 1:
+            mensagem = "Hj é seg";
+            break;
+        case 2:
+            mensagem = "Hj é ter";
+            break;
+        case 3:
+            mensagem = "Hj é qua";
+            break;
+        case 4:
+            mensagem = "Hj é qui";
+            break;
+        case 5:
+            mensagem = "Hj é sex";
+            break;
+        case 6:
+            mensagem = "Hj é sab";
+            break;
+        default:
+            mensagem = "Dia inválido";
+       
+    }
+    document.write(mensagem);
+</script>
