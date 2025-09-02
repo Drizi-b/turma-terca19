@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Formulários</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Criando Formulários</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome"><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@dominio.com"><br>
+            <p>Selecione seu sexo (masculino ou feminino):</p>
+            <input type="radio" name="sexo" id="mas">
+            <label for="sexo">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="sexo">Feminino</label>
+            <p>Selecione o Estado:</p>
+            <input type="checkbox" name="rj" id="rj" value="RJ">
+            <label for="rj">Rio de Janeiro</label>
+            <input type="checkbox" name="sp" id="sp" value="SP">
+            <label for="rj">São Paulo</label>
+            <input type="checkbox" name="mg" id="mg" value="MG">
+            <label for="mg">Minas Gerais</label>
+            <input type="checkbox" name="es" id="es" value="ES">
+            <label for="es">Espírito Santo</label>
+        </select><br>
+    <select name="pais" id="pais">
+        <option value="" disabled selected>Selecione um país
+        </option>
+        <optgroup label="america">
+            <option value="br">Brasil</option>
+            <option value="ar">Argentina</option>
+            <option value="ur">Uruguai</option>
+            <option value="pa">Paraguai</option>
+            <option value="bo">Bolívia</option>
+        <optgroup label="europa">
+            <option value="it">Itália</option>
+            <option value="pt">Portugal</option>
+            <option value="es">Espanha</option>
+            <option value="in">Inglaterra</option>
+            <option value="fr">França</option>
+            <option value="al">Alemanha</option>
+        </optgroup>
+        </select><br>
+        <label for="submit"></label>
+        <input type="submit" value="Enviar" id="enviar"><br>
+        <input type="button" id="botao" value="Clique aqui"><br>
+        <label for="arquivo">Arquivo:</label>
+        <input type="file" id="Arquivo"><br>
+        <label for="id_oculto">ID Oculto:</label>
+        <input type="hidden" id="id_oculto" name="id" value="123"><br>
+        <label for="imagem">Imagem:</label>
+        <input type="image" id="imagem" src="imagem.png" alt="Enviar"><br>
+        <label for="limpar"></label>
+        <input type="reset" id="limpar" value="Limpar"><br>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" min="1" max="100"><br>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2025 | Todos os direitos reservados - Dri Balon</p>
+    </footer>
+</body>
+</html>
