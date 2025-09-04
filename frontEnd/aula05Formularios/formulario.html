@@ -26,11 +26,15 @@
             <input type="password" name="senha" id="senha"><br>
             <label for="email">E-mail:</label>
             <input type="email" name="email" id="email" placeholder="exemplo@dominio.com"><br>
+            
+            <!-- Botão radio (para efetuar selecionamento único)-->
             <p>Selecione seu sexo (masculino ou feminino):</p>
-            <input type="radio" name="sexo" id="mas">
+            <input type="radio" name="sexo" id="mas"> <!--ids diferentes-->
             <label for="sexo">Masculino</label>
             <input type="radio" name="sexo" id="fem">
             <label for="sexo">Feminino</label>
+            
+            <!-- Checkbox (para efetuar selecionamento múltiplo)-->
             <p>Selecione o Estado:</p>
             <input type="checkbox" name="rj" id="rj" value="RJ">
             <label for="rj">Rio de Janeiro</label>
@@ -41,10 +45,11 @@
             <input type="checkbox" name="es" id="es" value="ES">
             <label for="es">Espírito Santo</label>
         </select><br>
-    <select name="pais" id="pais">
-        <option value="" disabled selected>Selecione um país
-        </option>
-        <optgroup label="america">
+    
+            <!-- Opções com menu suspenso -->
+        <select name="pais" id="pais">
+        <option value="" disabled selected>Selecione um país</option>
+        <optgroup label="america"> <!-- Criação de agrupamento -->
             <option value="br">Brasil</option>
             <option value="ar">Argentina</option>
             <option value="ur">Uruguai</option>
@@ -59,20 +64,74 @@
             <option value="al">Alemanha</option>
         </optgroup>
         </select><br>
-        <label for="submit"></label>
+        
+        <!-- Botão de envio do formulário -->
         <input type="submit" value="Enviar" id="enviar"><br>
+        
+        <!-- Botão genérico, geralmente usado em cj com JS -->
         <input type="button" id="botao" value="Clique aqui"><br>
+        
+        <!-- Permite ao usuário fazer upload de arquivos (para que o prp usuário envie seu arq) -->
         <label for="arquivo">Arquivo:</label>
         <input type="file" id="Arquivo"><br>
+
+        <!-- Campo invisível para envio de dados ocultos -->
         <label for="id_oculto">ID Oculto:</label>
         <input type="hidden" id="id_oculto" name="id" value="123"><br>
+
+        <!-- Imagem para substituir o botão "enviar" -->
         <label for="imagem">Imagem:</label>
         <input type="image" id="imagem" src="imagem.png" alt="Enviar"><br>
+
+        <!-- Resetar os campos do formulário -->
         <label for="limpar"></label>
         <input type="reset" id="limpar" value="Limpar"><br>
+
+        <!-- Campo para números com limites opcionais -->
         <label for="numero">Número:</label>
         <input type="number" id="numero" min="1" max="100"><br>
-        </form>
+
+        <!-- Controle deslizante para selecionar um valor -->
+        <label for="range">Intervalo:</label>
+        <input type="range" id="range" min="1" max="100"><br>
+         <!--"<output id="rangeValue">50</output><br>" pra que serve?-->
+
+        <!-- Selecionar data -->
+        <label for="data">Data:</label>
+        <input type="date" id="data"><br>
+
+        <!-- Horário -->
+        <label for="horario">Hora:</label>
+        <input type="time" id="hora"><br>
+
+        <!-- Data e hora em cj -->
+        <label for="data_hora">Data e hora:</label>
+        <input type="datetime-local" name="" id="data_hora"><br>
+
+        <!-- Mês e ano -->
+        <label for="mes">Mês:</label>
+        <input type="month" id="mes">
+
+        <!-- Semana -->
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana"><br>
+
+        <!-- URL -->
+        <label for="url">URL:</label>
+        <input type="url" name="" id="url" placeholder="https://exemplo.com"><br>
+
+        <!-- Telefone -->
+        <label for="tel">Telefone:</label>
+        <input type="cel" name="" id="tel" placeholder="Digite seu tel"><br>
+
+        <!-- Buscas -->
+        <label for="pesquisa">Pesquisa:</label>
+        <input type="search" name="" id="pesquisa" placeholder="Pesquisar"><br>
+        
+        <!-- Cores -->
+        <label for="cor">Cor:</label>
+        <input type="color" name="" id="cor"><br>
+    </form>
     </main>
     <footer>
         <p>&copy; Copyright 2025 | Todos os direitos reservados - Dri Balon</p>
