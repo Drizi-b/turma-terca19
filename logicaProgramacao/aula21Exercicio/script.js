@@ -1,15 +1,16 @@
 import Livro from "./models/Livro.js";
 const listaLivros = []
+
+function salvarLivros() {
+    localStorage.setItem('livros', JSON.stringify(listaLivros));
+}
+
 function adicionarLivro() {
     const titulo = prompt('Digite o título do livro:')
     const autor = prompt('Digite o autor do livro:')
     const genero = prompt('Digite o genero do livro:')
     
-    function salvarLivros() {
-  localStorage.setItem('livros', JSON.stringify(listaLivros));
-  
-}
-    if (titulo && isNaN(autor) && isNaN(genero)) {
+    if (titulo && titulo.trim() && autor && autor.trim() && genero && genero.trim()) {
         const livro = new Livro(titulo, autor, genero)
         listaLivros.push(livro)
         salvarLivros()
@@ -20,7 +21,7 @@ function adicionarLivro() {
 }
 function mostrarLivros() {
     if (listaLivros.length === 0) {
-        alert('Nenhum livro cadastro')
+        alert('Nenhum livro cadastrado')
         return
     }
 
@@ -38,7 +39,7 @@ function deletarLivro() {
     salvarLivros()
     alert(`Livro '${livroRemovido.titulo}' deletado com sucesso!`)
   } else {
-    alert('Livro ñ encontrado')
+    alert('Livro não encontrado')
   }
 }
 function menu() {
@@ -48,7 +49,7 @@ function menu() {
         "Escolha uma opção:\n1. Adicionar livro\n2. Listar livros\n3. Deletar livro\n4. Sair"
       )
     )
-    if (opcao === isNaN) {
+    if (isNaN(opcao) || opcao === null) {
       alert('Operação Cancelada.')
       break
     }
@@ -73,11 +74,16 @@ function menu() {
 function carregarLivros() {
   const livrosSalvos = localStorage.getItem('livros');
   if (livrosSalvos) {
-    const livrosArray = JSON.parse(livrosSalvos);
-    livrosArray.forEach(livroData => {
-      const livro = new Livro(livroData.titulo, livroData.autor, livroData.genero);
-      listaLivros.push(livro);
-    });
+    try {
+      const livrosArray = JSON.parse(livrosSalvos);
+      livrosArray.forEach(livroData => {
+        const livro = new Livro(livroData.titulo, livroData.autor, livroData.genero);
+        listaLivros.push(livro);
+      });
+    } catch (error) {
+      console.error('Erro ao carregar livros do localStorage:', error);
+      localStorage.removeItem('livros');
+    }
   }
 }
 
