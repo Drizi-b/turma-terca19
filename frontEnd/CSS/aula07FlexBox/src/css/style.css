@@ -19,6 +19,7 @@ body {
 .container {
         display: flex;
         justify-content: center;
+        background-color: rgb(141, 77, 152)
 }
 
 .quadrado {
