@@ -38,9 +38,6 @@ aside#aside {
     background-color: rgb(255, 255, 0);
     grid-area: a;
 }
-aside#aside ul li {
-    
-}
 footer#footer {
     background-color: rgb(21, 255, 0);
     grid-area: f;
