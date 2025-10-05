@@ -30,6 +30,9 @@ header#header {
     grid-column-end: 4; 
     grid-row: 1/4;*/
 }
+/* ul {
+    list-style: none;
+} "Apaga os pontinhos de ordenação da list" */
 main#main {
     background-color: rgb(43, 134, 226);
     grid-area: m;
