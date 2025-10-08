@@ -1,8 +1,97 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fontes/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fontes/Poppins/Poppins-ExtraBold.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fontes/Poppins/Poppins-Light.ttf);
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../Fontes/openSans/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../Fontes/openSans/OpenSans-ExtraBold.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../Fontes/openSans/OpenSans-Light.ttf);
+    font-weight: light;
+    font-style: normal;
+}
 
 * {
     margin: 0,5rem;
     padding: 0,5rem;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+}
+body,
+html {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: light;
+}
+header.cabecalho div.container {
+    display: flex;
+    justify-content: space-between;
+}
+div.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+nav.menu {
+    margin-top: 10px;
+}
+nav.menu ul li a {
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+main.principal div.container-titulo {
+    width: 100%;
+    background-color: #fa883c;
+    padding: 15px;
+}
+main.principal div.container-titulo h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+div.modulo {
+    width: 100%;
+    padding: 50px 0;
+}
+div.sobre {
+    background-color: #ddd;
+}
+h2.subtitulo,
+div.container.btn {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.mapa {
+    justify-items: center;
 }
