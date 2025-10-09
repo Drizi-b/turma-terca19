@@ -3,37 +3,37 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url(../Fontes/Poppins/Poppins-Regular.ttf);
+    src: url(../FontesAula10/Poppins/Poppins-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Poppins";
-    src: url(../Fontes/Poppins/Poppins-ExtraBold.ttf);
+    src: url(../FontesAula10/Poppins/Poppins-ExtraBold.ttf);
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: "Poppins";
-    src: url(../Fontes/Poppins/Poppins-Light.ttf);
+    src: url(../FontesAula10/Poppins/Poppins-Light.ttf);
     font-weight: light;
     font-style: normal;
 }
 @font-face {
     font-family: "OpenSans";
-    src: url(../Fontes/openSans/OpenSans-Regular.ttf);
+    src: url(../FontesAula10/openSans/OpenSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "OpenSans";
-    src: url(../Fontes/openSans/OpenSans-ExtraBold.ttf);
+    src: url(../FontesAula10/openSans/OpenSans-ExtraBold.ttf);
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: "OpenSans";
-    src: url(../Fontes/openSans/OpenSans-Light.ttf);
+    src: url(../FontesAula10/openSans/OpenSans-Light.ttf);
     font-weight: light;
     font-style: normal;
 }
@@ -93,5 +93,6 @@ div.container.btn {
     margin-bottom: 30px;
 }
 .mapa {
-    justify-items: center;
+    display: block;
+    margin: auto;
 }
