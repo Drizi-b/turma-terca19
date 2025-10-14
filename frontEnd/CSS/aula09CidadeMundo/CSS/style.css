@@ -99,3 +99,135 @@ div.container.btn {
 .celebridades {
     margin: auto;
 }
+.btn-saiba-mais {
+  background-color: #ff8000;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.btn-saiba-mais:hover {
+  transform: scale(1.2);
+  filter: brightness(0.95);
+}
+
+.btn-saiba-mais a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Modulo Tabela */
+table.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.tabela thead {
+  background-color: #333;
+  color: #fff;
+}
+
+table.tabela td,
+table.tabela th {
+  border: 1px solid #333;
+  padding: 7px;
+}
+
+/* Modulo Locais Interesse */
+div.lista-locais ul {
+  display: flex;
+  justify-content: center;
+}
+
+div.lista-locais ul li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff8000;
+  padding: 7px 12px;
+  margin: 0 3px;
+  border-radius: 5px;
+}
+
+footer.rodape {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #333;
+  background-image: url(../assets/img/australia/padrao-fundo-rodape.png);
+  border-top: 6px solid #ff8000;
+  text-align: center;
+  clear: both;
+}
+
+footer.rodape div.logo {
+  margin-bottom: 30px;
+}
+
+footer.rodape div.creditos {
+  color: #fff;
+}
+
+div.mapa {
+  width: 100%;
+}
+
+div.mapa img {
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.notaveis {
+  float: left;
+  background-color: #f1f0f0;
+  margin-top: 20px;
+}
+
+div.notaveis ol {
+  font-size: 22px;
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Pagina Sugestão */
+
+div.sugestao-texto {
+  text-align: center;
+}
+
+div.form-container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+input.form {
+  width: 100%;
+  min-height: 40px;
+  font-size: 17px;
+  text-indent: 10px;
+}
+
+textarea#sugestao {
+  width: 100%;
+}
+
+input.form-botao {
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #ff8000;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+input.form-botao:hover {
+  background-color: #ff8000;
+}
