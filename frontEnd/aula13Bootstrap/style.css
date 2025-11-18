@@ -1,6 +1,9 @@
 .carousel-caption.d-none.d-md-block {
   background-color: rgba(0, 0, 0, 0.5);
+  border: solid;
+  border-radius: 15px;
 }
 .carousel-caption.d-none.d-md-block h5, .carousel-caption.d-none.d-md-block p {
-    color: #fff;
+    color: yellow;
 }
+
