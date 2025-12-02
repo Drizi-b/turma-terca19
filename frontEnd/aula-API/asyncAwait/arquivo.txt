@@ -1,0 +1,1 @@
+Este é o conteúdo do arquivo de exemplo para demonstrar async/await com leitura de arquivos.
