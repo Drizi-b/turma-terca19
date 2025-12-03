@@ -4,9 +4,9 @@ cardsContainer.innerHTML = "";
 async function loadPokemons(limit = 649) {
   for (let i = 1; i <= limit; i++) {
     try {
-      const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
-      if (!res.ok) throw new Error(`HTTP {res.status}`);
-      const data = await res.json;
+      const res = await fetch(`http://pokeapi.co/api/v2/pokemon/${i}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
       const card = document.createElement("div");
       card.setAttribute("class", "card");
       const img = document.createElement("img");
