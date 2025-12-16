@@ -46,6 +46,8 @@ div.quadrado {
 div.quadrado.azul {
   background-color: #0000FF;
   color: #000;
+  overflow: scroll; /* aparece uma barra de rolagem tanto vertical(overflow-y) qto horizontal(overflow-x) */
+  /* overflow: hidden;  quebra o texto, mas ñ mostra tudo */
 }
 
 div.quadrado.vermelho {
