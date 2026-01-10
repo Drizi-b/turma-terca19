@@ -33,7 +33,7 @@ body {
     display: flex;
     box-shadow: 1px 0px 5px #000;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: center; /* texto no centro */
     align-items: center;/* text-align: center; */
 }
 .quadrado.azul {

@@ -11,10 +11,10 @@ section {
     height: 100vh;
     width: 100vw;
     gap: 2px;
-    grid-template-columns: repeat(3, 50px);
-    justify-content: center;
-    grid-template-rows: repeat(3, 50px);
-    align-content: center;
+    grid-template-columns: repeat(3, 50px); /* 3 colunas de 50px cada */
+    justify-content: center; /* alinha no centro da tela na horizontal*/
+    grid-template-rows: repeat(3, 50px); /* 3 linhas de 50px cada */
+    align-content: center; /* alinha no centro da tela na vertical*/
 }
 div {
     background-color: #5b0097;
@@ -23,8 +23,8 @@ div {
     place-self: center; */
 }
 div:nth-child(5) {
-    align-self: flex-end; /*alinha horizontalmente*/
-    justify-self: end;  /*alinha verticalmente*/
-    place-self: start;  /*alinha vertical e horizontalmente*/
+    /* align-self: flex-end; alinha horizontalmente */
+    /* justify-self: end;  alinha verticalmente */
+    /* place-self: start;  alinha vertical e horizontalmente */
     background-color: violet;
 }

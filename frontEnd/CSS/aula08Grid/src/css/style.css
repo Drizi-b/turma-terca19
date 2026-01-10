@@ -9,9 +9,9 @@
 header#header, main#main, aside#aside, footer#footer {
     padding: 20px;
 }
-header, main, aside, footer {
+/* header, main, aside, footer {
     background-color: rgb(221, 221, 221);
-}
+} */
 div.container {
     display: grid;
     grid-template-areas:

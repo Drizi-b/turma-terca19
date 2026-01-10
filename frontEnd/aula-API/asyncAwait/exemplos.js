@@ -55,7 +55,10 @@
 const fs = require('fs').promises;
 
 async function lerArquivo() {
-    const conteudo = await fs.readFile('arquivo.txt', 'utf-8');
+    const conteudo = await fs.readFile(
+      'c:/Users/drizi/Desktop/Dev/turma-terca19/frontEnd/aula-API/asyncAwait/arquivo.txt',
+      "utf-8"
+    );
     console.log('conteudo do arquivo:', conteudo);
 }
 lerArquivo();
